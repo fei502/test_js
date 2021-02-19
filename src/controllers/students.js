@@ -2,7 +2,7 @@ const studentModel = require('../models/student');
 
 
 async function addStudent(req,res){
-    const student = new studentModel({_id:"ss",name:"frank"});
+    const student = new studentModel({_id:"ss123",name:"frankYST"});
     await student.save();
     return res.status(201).json(student);
 }
